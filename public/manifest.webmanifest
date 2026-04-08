@@ -1,0 +1,22 @@
+{
+  "name": "Resonance · Guitar Tuner",
+  "short_name": "Resonance",
+  "description": "Free real-time guitar tuner in your browser. FFT pitch detection, standard E-A-D-G-B-E tuning.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "categories": ["music", "utilities"],
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}

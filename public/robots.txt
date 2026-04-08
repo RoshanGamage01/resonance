@@ -1,0 +1,5 @@
+# https://resonance.roshangamage.me
+User-agent: *
+Allow: /
+
+Sitemap: https://resonance.roshangamage.me/sitemap.xml

@@ -9,6 +9,25 @@
   box-sizing: border-box;
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: var(--surface-2);
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: clamp(1rem, 4vw, 2.5rem);
+  top: 0.75rem;
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
 .header {
   display: flex;
   align-items: flex-start;
@@ -650,6 +669,27 @@
   color: var(--gold-dim);
   background: rgba(212, 165, 116, 0.1);
   vertical-align: middle;
+}
+
+.site-footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.site-footer strong {
+  color: var(--text-bright);
+  font-weight: 600;
 }
 
 .level-bar {
