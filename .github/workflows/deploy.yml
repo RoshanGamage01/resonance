@@ -35,7 +35,8 @@ jobs:
 
       - name: Build
         env:
-          VITE_BASE: /resonance/
+          # Root base for custom domain (e.g. resonance.roshangamage.me). Use /repo-name/ only for username.github.io/repo/ without CNAME.
+          VITE_BASE: /
         run: npm run build
 
       - name: Upload artifact

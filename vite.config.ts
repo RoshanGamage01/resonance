@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// GitHub Pages project site: set VITE_BASE=/repo-name/ in CI (see .github/workflows/deploy.yml)
+// Production base: CI sets VITE_BASE (root `/` for custom domain; `/repo/` only for github.io project URLs).
 const base = process.env.VITE_BASE ?? '/'
 
 // https://vite.dev/config/
