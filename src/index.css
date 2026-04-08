@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&display=swap');
+
+:root {
+  --bg-deep: #0a0a0c;
+  --surface: #121218;
+  --surface-2: #1a1a22;
+  --border: #2a2a34;
+  --text: #c4c2ce;
+  --text-muted: #7a7788;
+  --text-bright: #f4f2ff;
+  --gold: #e4bc84;
+  --gold-dim: #c49a62;
+  --copper: #b8895c;
+  --tuned: #7ed9a8;
+  --meter-low: #6b8cc7;
+  --meter-mid: var(--gold);
+  --meter-high: #d98f6e;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --radius-md: 12px;
+  --radius-lg: 22px;
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --card-shadow:
+    0 24px 56px rgba(0, 0, 0, 0.48),
+    0 0 0 1px rgba(255, 255, 255, 0.045) inset;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  background: var(--bg-deep);
+  background-image:
+    radial-gradient(ellipse 120% 85% at 50% -32%, rgba(212, 165, 116, 0.1), transparent 55%),
+    radial-gradient(ellipse 55% 45% at 100% 102%, rgba(90, 70, 120, 0.14), transparent),
+    radial-gradient(ellipse 40% 30% at 0% 80%, rgba(184, 137, 92, 0.06), transparent);
+  background-attachment: fixed;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
