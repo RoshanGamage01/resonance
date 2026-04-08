@@ -23,6 +23,9 @@ export default function App() {
 
   return (
     <div className="app">
+      <a href="#main-content" className="skip-link">
+        Skip to tuner
+      </a>
       <header className="header">
         <div className="brand">
           <span className="brand-mark" aria-hidden>
@@ -76,7 +79,7 @@ export default function App() {
         </div>
       )}
 
-      <main className="main">
+      <main id="main-content" className="main" aria-label="Guitar tuner">
         <section
           className={`card display-card${inTune ? ' display-card--tuned' : ''}`}
           aria-live="polite"
@@ -231,6 +234,13 @@ export default function App() {
           </footer>
         </section>
       </main>
+
+      <footer className="site-footer">
+        <p>
+          <strong>Resonance</strong> — browser guitar tuner with FFT pitch detection. Use a quiet room and allow
+          microphone access for best results.
+        </p>
+      </footer>
 
       <div className="level-bar" aria-hidden>
         <div

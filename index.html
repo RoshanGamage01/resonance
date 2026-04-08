@@ -2,12 +2,110 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resonance · Guitar Tuner</title>
+    <meta name="color-scheme" content="dark" />
+
+    <title>Resonance · Free online guitar tuner (real-time FFT)</title>
+    <meta
+      name="description"
+      content="Tune your guitar in the browser with Resonance—real-time FFT pitch detection, standard E-A-D-G-B-E strings, auto or manual mode. Works on desktop and mobile; microphone required."
+    />
+    <meta
+      name="keywords"
+      content="guitar tuner, online guitar tuner, free guitar tuner, chromatic tuner, FFT tuner, Web Audio, tune guitar, acoustic guitar, electric guitar, standard tuning"
+    />
+    <meta name="author" content="Roshan Gamage" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#0a0a0c" />
+    <meta name="application-name" content="Resonance" />
+
+    <link rel="canonical" href="https://resonance.roshangamage.me/" />
+    <link rel="alternate" hreflang="en" href="https://resonance.roshangamage.me/" />
+    <link rel="alternate" hreflang="x-default" href="https://resonance.roshangamage.me/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Resonance" />
+    <meta property="og:title" content="Resonance · Free online guitar tuner" />
+    <meta
+      property="og:description"
+      content="Real-time FFT guitar tuning in your browser—standard tuning, cents meter, no install. Enable your mic and play."
+    />
+    <meta property="og:url" content="https://resonance.roshangamage.me/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://resonance.roshangamage.me/og.svg" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Resonance guitar tuner — dark theme with gold accents" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Resonance · Free online guitar tuner" />
+    <meta
+      name="twitter:description"
+      content="Real-time FFT guitar tuning in your browser. Standard E-A-D-G-B-E, cents display, works on mobile."
+    />
+    <meta name="twitter:image" content="https://resonance.roshangamage.me/og.svg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://resonance.roshangamage.me/#website",
+            "url": "https://resonance.roshangamage.me/",
+            "name": "Resonance",
+            "description": "Free browser-based guitar tuner using FFT pitch detection and the Web Audio API.",
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://resonance.roshangamage.me/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://resonance.roshangamage.me/#organization",
+            "name": "Resonance",
+            "url": "https://resonance.roshangamage.me/"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://resonance.roshangamage.me/#app",
+            "name": "Resonance Guitar Tuner",
+            "url": "https://resonance.roshangamage.me/",
+            "applicationCategory": "MusicApplication",
+            "operatingSystem": "Web Browser",
+            "browserRequirements": "Requires HTML5, JavaScript, and microphone access (getUserMedia).",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Real-time FFT-based pitch detection",
+              "Standard guitar tuning E-A-D-G-B-E",
+              "Auto and manual string targeting",
+              "Cents deviation display"
+            ],
+            "isAccessibleForFree": true
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p style="padding: 2rem; font-family: system-ui, sans-serif; max-width: 40rem; margin: 0 auto">
+        Resonance needs JavaScript to run the guitar tuner. Please enable JavaScript in your browser, then reload this
+        page.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

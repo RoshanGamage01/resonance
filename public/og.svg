@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="og-title og-desc">
+  <title id="og-title">Resonance guitar tuner</title>
+  <desc id="og-desc">Real-time FFT pitch detection in the browser</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0c" />
+      <stop offset="55%" stop-color="#121218" />
+      <stop offset="100%" stop-color="#1a1512" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="15%" r="65%">
+      <stop offset="0%" stop-color="#e4bc84" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#e4bc84" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <text x="600" y="268" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#f4f2ff" letter-spacing="-0.03em">Resonance</text>
+  <text x="600" y="338" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="500" fill="#e4bc84" letter-spacing="0.12em">GUITAR TUNER</text>
+  <text x="600" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#9a96a8">Real-time FFT ù Web Audio ù No install</text>
+</svg>

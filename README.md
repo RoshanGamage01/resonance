@@ -33,3 +33,7 @@ If the deploy job fails with **404** / “Ensure GitHub Pages has been enabled�
 
 - **Custom domain:** https://resonance.roshangamage.me/ (HTTPS works for the microphone API).
 - If you need the **github.io project URL** (`…/resonance/`) instead, set `VITE_BASE` in the workflow to `/resonance/` and drop or change `public/CNAME` so paths match how you host.
+
+### SEO
+
+Canonical URL, Open Graph / Twitter meta, JSON-LD (`WebSite`, `WebApplication`), `robots.txt`, `sitemap.xml`, and `manifest.webmanifest` live in `index.html` and `public/`. If the site moves to another domain, update absolute URLs in those files to match.
